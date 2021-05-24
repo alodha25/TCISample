@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_eUvfwKz2Eeu55Zj-mxLJcw" targetNamespace="http://tns.tibco.com/bw/composite/CovanceConnectivityTest" name="CovanceConnectivityTest" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_2_lo4Kz2Eeu55Zj-mxLJcw" name="test" promote="ComponentMain/test">
+    <sca:interface.wsdl xmi:id="_2_uLwKz2Eeu55Zj-mxLJcw" interface="http://xmlns.example.com/20210504113336PLT#wsdl.interface(test)" scaext:wsdlLocation="../Processes/covanceconnectivitytest/Main.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_2_05cKz2Eeu55Zj-mxLJcw" name="RestService" path="/test" docBasePath="http://localhost:7777/CovanceConnectivityTest" docResourcePath="Test" basePath="/" connector="covanceconnectivitytest.Test" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/covanceconnectivitytest.Main-Test.json">
+      <operation xmi:id="_2_3VsKz2Eeu55Zj-mxLJcw" operationName="post" nickname="post-test" httpMethod="POST" notes="postTest" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_2_-qcKz2Eeu55Zj-mxLJcw"/>
+      <advancedConfig xmi:id="_2_05caz2Eeu55Zj-mxLJcw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_2_3Vsaz2Eeu55Zj-mxLJcw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_euYHwKz2Eeu55Zj-mxLJcw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eujt8Kz2Eeu55Zj-mxLJcw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eunYUKz2Eeu55Zj-mxLJcw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eurpwKz2Eeu55Zj-mxLJcw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_euvUIKz2Eeu55Zj-mxLJcw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eu0MoKz2Eeu55Zj-mxLJcw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8jv0AK0BEeu55Zj-mxLJcw" name="/JMS/destination" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9i1ScK0BEeu55Zj-mxLJcw" name="/JMS/JMSProviderURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AVtCsK0CEeu55Zj-mxLJcw" name="/JMS/JMSInterval" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DYYDEK2-Eeu55Zj-mxLJcw" name="/JMS/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DcpfEK2-Eeu55Zj-mxLJcw" name="/JMS/password" type="property:password" scaext:simpleValue="#!nmmC+Lv9vHo+4pywtPpYIw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_JzMrUK0XEeu55Zj-mxLJcw" name="/eFTL/connectionURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LLXYIK0XEeu55Zj-mxLJcw" name="/eFTL/destination" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_W9hXkK0XEeu55Zj-mxLJcw" name="/AuditSafe/serverURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Yw7O4K0XEeu55Zj-mxLJcw" name="/AuditSafe/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Y0lm4K0XEeu55Zj-mxLJcw" name="/AuditSafe/password" type="property:password" scaext:simpleValue="#!FpfJaylO1YuK2Yk1ySiX6A==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_e1q_kK0XEeu55Zj-mxLJcw" name="/DB/url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fgHqwK0XEeu55Zj-mxLJcw" name="/DB/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fitrwK0XEeu55Zj-mxLJcw" name="/DB/password" type="property:password" scaext:simpleValue="#!6zaK1T7SHnxIBasRHcl/tQ==" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_easWwKz2Eeu55Zj-mxLJcw" name="ComponentMain" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_easWwaz2Eeu55Zj-mxLJcw" processName="covanceconnectivitytest.Main"/>
+    <sca:service xmi:id="_2_h-gKz2Eeu55Zj-mxLJcw" name="test">
+      <sca:interface.wsdl xmi:id="_2_ilkKz2Eeu55Zj-mxLJcw" interface="http://xmlns.example.com/20210504113336PLT#wsdl.interface(test)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_O0hrYK3AEeu55Zj-mxLJcw" name="ComponenteFTLOrderSubscriber" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_O0hrYa3AEeu55Zj-mxLJcw" processName="covanceconnectivitytest.eFTLSubscriber"/>
+  </sca:component>
+  <sca:component xmi:id="_PA_aEK3AEeu55Zj-mxLJcw" name="ComponentEMSOrderSubscriber" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_PA_aEa3AEeu55Zj-mxLJcw" processName="covanceconnectivitytest.EMSSubscriber"/>
+  </sca:component>
+</sca:composite>

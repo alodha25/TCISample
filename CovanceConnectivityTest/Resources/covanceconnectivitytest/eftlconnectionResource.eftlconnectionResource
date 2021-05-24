@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eftl="http://ns.tibco.com/bw/sharedresource/eftl" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_4xxGwKH2EeuEk-teZUgmZA" name="covanceconnectivitytest.eftlconnectionResource" type="eftl:EftlConnection">
+  <jndi:configuration xsi:type="eftl:EftlConnection" xmi:id="_4x1_QKH2EeuEk-teZUgmZA" connectionUrl="/eFTL/connectionURL " authKey="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJnc2JjIjoiMDFFWEtQRDNEU0hQMjRFMEtRODM1QkNNODYiLCJpYXQiOjE2MTk3MTQzOTMsInN1YiI6IjZhM2M0MmFiNjkzYjRjZWNhMTM1NTAwYmI3MjIzNzYyIn0.aT-DUuDZaUzOh_EW4ciAobEStn0e6UadkaAkVWI5uyafNbXvb0cfsCn0rjPY7-o3NQrOO8OnbXHC04WyK8LXx04gTyonBehQp1CAoPjKnRFaLWIc5ndGuxeMMsfOje4Jek66WzEKmRdG4dsWf55av09VQhTdlrXbiOdogfBbechf7nnX4GmpxUHx43sG3mEk2LRvfM0onAKBUP8fsmT2JiCa1v5UhmT9ELlEuAtAEQRKGa5MqiRaM-H_YjebxyCYJGKse7r8wwwL9itwDK7jerSWzXMejkrndC5rDNbY4_m57MD0pTEqe3Xf_meeV7ZcYZ-jDepcKALkPyF-H7AGdw">
+    <substitutionBindings xmi:id="_vtVDwKqnEeurNMe01PhkkA" template="connectionUrl" propName="/eFTL/connectionURL"/>
+  </jndi:configuration>
+</jndi:namedResource>

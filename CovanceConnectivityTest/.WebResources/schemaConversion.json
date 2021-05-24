@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/CovanceConnectivityTest/Service Descriptors/covanceconnectivitytest.Main-Test.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1620146150647"
+    },
+    {
+        "jsonSchemaLocation": "/CovanceConnectivityTest/Service Descriptors/covanceconnectivitytest.Main2-Test2.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1620146150647"
+    }
+]}

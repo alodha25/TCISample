@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_FktBMaIMEeuPs-4yfXlR9A" name="covanceconnectivitytest.JDBCConnectionResource" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_Fk7DoKIMEeuPs-4yfXlR9A" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_Fk7DoaIMEeuPs-4yfXlR9A" maxConnections="12">
+    <substitutionBindings xmi:id="_N1ytoKIMEeuPs-4yfXlR9A" template="username" propName="/DB/username"/>
+    <substitutionBindings xmi:id="_d14GEKIMEeuPs-4yfXlR9A" template="password" propName="/DB/password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_Fk840KIMEeuPs-4yfXlR9A" jdbcDriver="tibcosoftwareinc.jdbc.oracle.OracleDriver" loginTimeout="120">
+      <substitutionBindings xmi:id="_OHZO8KqnEeurNMe01PhkkA" template="dbURL" propName="/DB/url"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

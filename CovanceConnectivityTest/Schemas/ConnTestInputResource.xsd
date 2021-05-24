@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1620146150647" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1620146150647">
+  <complexType name="ConnTestInputElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="jms" type="boolean"/>
+      <element maxOccurs="1" minOccurs="0" name="eftl" type="boolean"/>
+      <element maxOccurs="1" minOccurs="0" name="jdbc" type="boolean"/>
+      <element maxOccurs="1" minOccurs="0" name="auditsafe" type="boolean"/>
+    </sequence>
+  </complexType>
+  <element name="ConnTestInputElement" type="tns:ConnTestInputElementType"/>
+</schema>

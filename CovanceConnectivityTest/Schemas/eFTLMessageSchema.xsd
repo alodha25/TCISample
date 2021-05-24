@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://tns.tibco.com/bw/eftl/message/1593334569330" targetNamespace="http://tns.tibco.com/bw/eftl/message/1593334569330">
+   <xsd:complexType name="EFTLMessageType">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="id" type="xsd:string" />
+         <xsd:element name="message" type="xsd:string" />
+         <xsd:element name="event_id" type="xsd:string" />
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

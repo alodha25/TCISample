@@ -1,0 +1,58 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Test",
+    "description" : "Test service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/test" : {
+      "post" : {
+        "summary" : "postTest",
+        "description" : "postTest",
+        "operationId" : "post-test",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/ConnTestInputElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a ConnTestInputElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ConnTestInputElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ConnTestInputElement" : {
+      "type" : "object",
+      "properties" : {
+        "jms" : {
+          "type" : "boolean"
+        },
+        "eftl" : {
+          "type" : "boolean"
+        },
+        "jdbc" : {
+          "type" : "boolean"
+        },
+        "auditsafe" : {
+          "type" : "boolean"
+        }
+      }
+    }
+  }
+}

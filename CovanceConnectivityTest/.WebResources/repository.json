@@ -1,0 +1,17 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/covanceconnectivitytest.Main-Test.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/covanceconnectivitytest.CopyOfMain-Test.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/covanceconnectivitytest.Main2-Test2.json",
+            "type": "generated"
+        }
+    ]
+}
